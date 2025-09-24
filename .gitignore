@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+out/
+
+# Electron packaged apps
+*.exe
+*.asar
+*.nupkg
+*.AppImage
+*.dmg
+*.deb
+*.rpm
+
+# Logs and temp
+*.log
+.DS_Store
+*.tmp
+.env
