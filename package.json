@@ -10,6 +10,17 @@
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
+  "build":{
+    "appId": "com.electron-app.id",
+    "productName": "SAT-SIPRED",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility"
+    }
+  },
   "keywords": [],
   "author": "Rebeca",
   "license": "ISC",
