@@ -10,7 +10,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "build":{
+  "build": {
     "appId": "com.electron-app.id",
     "productName": "SAT-SIPRED",
     "linux": {
@@ -35,6 +35,7 @@
     "@electron-forge/plugin-fuses": "^7.9.0",
     "@electron/fuses": "^1.8.0",
     "electron": "38.1.2",
+    "electron-builder": "^26.0.12",
     "standard": "17.1.2"
   },
   "eslintConfig": {
