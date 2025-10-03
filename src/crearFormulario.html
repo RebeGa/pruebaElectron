@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+        />
+        <meta
+            http-equiv="X-Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+        />
+        <title>SIPRED</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script defer src="./renderer.js"></script>
+    </head>
+    <body class="body">
+
+    <!--Header-->
+    <header class="header">
+      <div class="logo">
+        <img class="img1" src="assets/img/Logo-Hacienda-SAT.png">
+        <i class="bi bi-box-arrow-in-left" title="cerrar sesión"></i>
+        <i class="bi bi-question-circle" title="preguntas frecuentes"></i>
+        <img class="img2" src="assets/img/SIPRED Admin Web3.png">
+      </div>
+    </header>
+
+    <!--Navbar-->
+         <nav>
+       <ul class="navbar">
+        <li><a href="#">Formulario &#9662</a>
+          <ul class="submenu">
+          <li><a href="">Nuevo</a></li>
+          <li><a href="index.html">Abrir</a></li>
+          <li><a href="">Guardar</a></li>
+          <li><a href="">Guardar y Liberar</a></li>
+          <li><a href="">Consultar</a></li>
+          <li><a href="">Cerrar</a></li>
+        </ul>
+        </li> 
+        <li><a href="#">Autorizaciones &#9662</a>
+        <ul class="submenu">
+          <li><a href="agregarFormulario.html">Iniciar Proceso de Publicación</a></li>
+          <li><a href="">Aceptar Mapa</a></li>
+          <li><a href="">Autorizar</a></li>
+          <li><a href="">Recibir</a></li>
+          <li><a href="">Publicar</a></li>
+          <li><a href="">Ajustar</a></li>
+          <li><a href="">Habilitar Nueva Versión</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Modo Prueba</a>
+      <li><a href="#">Administración &#9662</a>
+        <ul class="submenu">
+          <li><a href="generarEjercicio.html">Generar Ejercicio</a></li>
+          <li><a href="agregarFormulario.html">Agregar Formulario</a></li>
+          <li><a href="eliminarFormulario.html">Eliminar Formulario</a></li>
+          <li><a href="">Tipo de Dato</a></li>
+          <li><a href="">Lista</a></li>
+          <li><a href="">Agregar Formulario al Ejercicio</a></li>
+          <li><a href="">Admon. de Tipo de Documento</a></li>
+        </ul>
+      </li>
+      </ul>
+    </nav>
+
+     
+    <div class="inicio">     
+      <div class="box">           
+        <h3 class="text">Crear Nuevo Formulario</h3>
+        <p>Información de la plantilla a crear</p>
+
+        <div class="select_container"> 
+
+            <div class="container">
+              <p>Ejercicio Fiscal</p>
+              <select class="select">
+                    <option> 2025 </option>
+                    <option> 2025 </option>
+                </select>
+            </div>
+
+            <div class="container">
+               <p>Seleccione el Tipo de Documento</p>
+               <select class="select">
+                    <option> Dictamen </option>
+                    <option> Dictamen </option>
+                </select>
+               <select class="select">
+                    <option> Seleccione el Tipon de la Nueva Plantilla </option>
+                    <option> Dictamen </option>
+                </select>
+            </div>          
+              
+          </div>
+
+          <hr>
+
+          <p>Plantilla de Referencia</p>
+
+          <div class="select_container"> 
+
+            <div class="container">
+              <p>Ejercicio Fiscal</p>
+              <select disabled class="select">
+                    <option> 2025 </option>
+                    <option> 2025 </option>
+                </select>
+            </div>
+
+            <div class="container">
+               <p>Seleccione el Tipo de Documento</p>
+               <select class="select">
+                    <option> Dictamen </option>
+                    <option> Dictamen </option>
+                </select>
+            </div>          
+              
+          </div>
+      </div>
+    </div>
+
+
+     <!--Footer-->
+      <footer class="footer">
+        <div class="datos">
+          <p>Nombre de la Administración</p>
+          <p>Nombre de Usuario Autenticado</p>
+        </div>
+      </footer>
+
+    </body>
+</html>

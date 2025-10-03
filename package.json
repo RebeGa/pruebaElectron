@@ -9,7 +9,7 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "build": "electron-forge build" 
+    "build": "electron-builder --linux"
   },
   "build": {
     "appId": "com.electron-app.id",
@@ -43,6 +43,8 @@
     "extends": "standard"
   },
   "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
     "electron-squirrel-startup": "^1.0.1"
   }
 }
