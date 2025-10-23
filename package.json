@@ -2,24 +2,44 @@
   "name": "electron-app",
   "version": "1.0.0",
   "description": "app electron para SIPRED",
-  "main": "src/main.js",
+  "main": "dist/main.js",
   "scripts": {
     "dev": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "build": "electron-builder --linux"
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux",
+    "build:mac": "electron-builder --mac",
+    "clean": "rimraf dist",
+    "build": "npm run clean && electron-builder"
   },
   "build": {
-    "appId": "com.electron-app.id",
+    "appId": "com.electron-app.miapp",
     "productName": "SAT-SIPRED",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "dist/**/*",
+      "renderer/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
     "linux": {
-      "target": [
-        "AppImage",
-        "deb"
-      ],
+      "target": ["AppImage","deb"],
+      "icon": "build/icon.png",
       "category": "Utility"
+    },
+    "mac": {
+      "target": ["dmg", "zip"],
+      "icon": "build/icon.png"
     }
   },
   "keywords": [],
@@ -27,15 +47,15 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@electron-forge/cli": "^7.9.0",
-    "@electron-forge/maker-deb": "^7.9.0",
-    "@electron-forge/maker-rpm": "^7.9.0",
-    "@electron-forge/maker-squirrel": "^7.9.0",
-    "@electron-forge/maker-zip": "^7.9.0",
-    "@electron-forge/plugin-auto-unpack-natives": "^7.9.0",
-    "@electron-forge/plugin-fuses": "^7.9.0",
+    "@electron-forge/cli": "^7.10.2",
+    "@electron-forge/maker-deb": "^7.10.2",
+    "@electron-forge/maker-rpm": "^7.10.2",
+    "@electron-forge/maker-squirrel": "^7.10.2",
+    "@electron-forge/maker-zip": "^7.10.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.10.2",
+    "@electron-forge/plugin-fuses": "^7.10.2",
     "@electron/fuses": "^1.8.0",
-    "electron": "38.1.2",
+    "electron": "^38.1.2",
     "electron-builder": "^26.0.12",
     "standard": "17.1.2"
   },
@@ -46,5 +66,13 @@
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
     "electron-squirrel-startup": "^1.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RebeGa/pruebaElectron.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RebeGa/pruebaElectron/issues"
+  },
+  "homepage": "https://github.com/RebeGa/pruebaElectron#readme"
 }

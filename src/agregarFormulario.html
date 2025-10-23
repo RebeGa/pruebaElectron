@@ -18,7 +18,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <script defer src="./renderer.js"></script>
     </head>
-    <body class="body">
+
+<body class="body">
 
     <!--Header-->
     <header class="header">
@@ -30,93 +31,100 @@
         </div>
     </header>
 
+      <!--NAVBAR-->
+      
       <nav>
-       <ul class="navbar">
-        <li><a href="#">Formulario &#9662</a>
-          <ul class="submenu">
-          <li><a href="">Nuevo</a></li>
-          <li><a href="index.html">Abrir</a></li>
-          <li><a href="">Guardar</a></li>
-          <li><a href="">Guardar y Liberar</a></li>
-          <li><a href="">Consultar</a></li>
-          <li><a href="">Cerrar</a></li>
+        <ul class="navbar">
+          <li class="li"><a class="a" href="#">Formulario &#9662</a>
+            <ul class="submn">
+              <li><a href="">Nuevo</a></li>
+              <li><a href="index.html">Abrir</a></li>
+              <li><a href="">Guardar</a></li>
+              <li><a href="">Guardar y Liberar</a></li>
+              <li><a href="">Consultar</a></li>
+              <li><a href="">Cerrar</a></li>
+            </ul>
+          </li>
+          <li class="li"><a class="a" href="#">Autorizaciones &#9662</a>
+            <ul class="submn">
+              <li><a href="agregarFormulario.html">Iniciar Proceso de Publicación</a></li>
+              <li><a href="">Aceptar Mapa</a></li>
+              <li><a href="">Autorizar</a></li>
+              <li><a href="">Recibir</a></li>
+              <li><a href="">Publicar</a></li>
+              <li><a href="">Ajustar</a></li>
+              <li><a href="">Habilitar Nueva Versión</a></li>
+            </ul>
+          </li>
+          <li class="li"><a class="a" href="#">Modo Prueba</a></li>
+          <li class="li"><a class="a" href="#">Administración &#9662</a>
+            <ul class="submn">
+              <li><a href="generarEjercicio.html">Generar Ejercicio</a></li>
+              <li><a href="agregarFormulario.html">Agregar Formulario</a></li>
+              <li><a href="eliminarFormulario.html">Eliminar Formulario</a></li>
+              <li><a href="">Tipo de Dato</a></li>
+              <li><a href="">Lista</a></li>
+              <li><a href="">Agregar Formulario al Ejercicio</a></li>
+              <li><a href="">Admon. de Tipo de Documento</a></li>
+            </ul>
+          </li>
+          <li class="li"><a class="a" href="#">Firmado</a>
+          </li>
         </ul>
-        </li> 
-        <li><a href="#">Autorizaciones &#9662</a>
-        <ul class="submenu">
-          <li><a href="agregarFormulario.html">Iniciar Proceso de Publicación</a></li>
-          <li><a href="">Aceptar Mapa</a></li>
-          <li><a href="">Autorizar</a></li>
-          <li><a href="">Recibir</a></li>
-          <li><a href="">Publicar</a></li>
-          <li><a href="">Ajustar</a></li>
-          <li><a href="">Habilitar Nueva Versión</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Modo Prueba</a>
-      <li><a href="#">Administración &#9662</a>
-        <ul class="submenu">
-          <li><a href="generarEjercicio.html">Generar Ejercicio</a></li>
-          <li><a href="agregarFormulario.html">Agregar Formulario</a></li>
-          <li><a href="eliminarFormulario.html">Eliminar Formulario</a></li>
-          <li><a href="">Tipo de Dato</a></li>
-          <li><a href="">Lista</a></li>
-          <li><a href="">Agregar Formulario al Ejercicio</a></li>
-          <li><a href="">Admon. de Tipo de Documento</a></li>
-        </ul>
-      </li>
-      </ul>
-    </nav>
+      </nav>
+      <!--FIN NAVBAR-->
     
      <!--Contenido box-->
 
-     <div class="inicio">     
+    <form class="inicio" id="formulario">     
       <div class="box">           
         <h3 class="text">Agregar Formulario</h3>
 
         <div class="input_container"> 
             <div class="cont">
               <p>Plantilla:</p>
-              <input type="text">
+              <input type="text" id="plantilla">
             </div>
        </div>
 
-     <div class="input_container"> 
-            <div class="cont">
-              <p>Plantilla ID :</p>
-              <input type="text">
-            </div>
-     </div>
+      <div class="input_container"> 
+              <div class="cont">
+                <p>Plantilla ID :</p>
+                <input type="text" id="plantillaID">
+              </div>
+        </div>
 
       <div class="input"> 
             <div class="cont">
               <p>Nombre Largo :</p>
-              <input type="text">
+              <input type="text" id="nombreLargo">
             </div>
       </div>
 
       <div class="input_container"> 
             <div class="cont">
               <p>Siglas :</p>
-              <input type="text">
+              <input type="text" id="siglas">
             </div>
       </div>
 
        <div class="input_container"> 
             <div class="cont">
               <p>Tipo de Documento :</p>
-                <select disabled class="select">
+                <select disabled class="select" id="tipo">
                     <option> Dictamen </option>
                 </select>
             </div>
        </div>
 
-        <div class="botones">
-            <button>Aceptar</button>
+        <div class="boxbutton">
+            <button type="submit" class="btncolor">Aceptar</button>
             <button>Cancelar</button>
         </div>
       </div>
- </div>     
+
+   </form>     
+
 <!--Footer-->
       <footer class="footer">
         <div class="datos">

@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+  />
+  <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+  />
+
   <link rel="stylesheet" href="style.css">
+  <link href="https://framework-gb.cdn.gob.mx/gm/v3/qa/assets/styles/main.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script defer src="src/renderer.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
     <title>SIPRED</title>
 
 </head>
@@ -29,54 +31,50 @@
         <img class="img2" src="assets/img/SIPRED Admin Web3.png">
       </div>
     </header>
+   
+    <!--NAVBAR-->
 
-    <!-- Navbar 
-     <div>
-      <nav class="navbar">
-        <li>Fomulario</li>
-        <li>Autorizaciones</li>
-        <li>Modo Prueba</li>
-        <li>Administración</li>
+      <nav>
+        <ul class="navbar">
+          <li class="li"><a class="a" href="#">Formulario &#9662</a>
+            <ul class="submn">
+              <li><a href="">Nuevo</a></li>
+              <li><a href="index.html">Abrir</a></li>
+              <li><a href="">Guardar</a></li>
+              <li><a href="">Guardar y Liberar</a></li>
+              <li><a href="">Consultar</a></li>
+              <li><a href="">Cerrar</a></li>
+            </ul>
+          </li>
+          <li class="li"><a class="a" href="#">Autorizaciones &#9662</a>
+            <ul class="submn">
+              <li><a href="agregarFormulario.html">Iniciar Proceso de Publicación</a></li>
+              <li><a href="">Aceptar Mapa</a></li>
+              <li><a href="">Autorizar</a></li>
+              <li><a href="">Recibir</a></li>
+              <li><a href="">Publicar</a></li>
+              <li><a href="">Ajustar</a></li>
+              <li><a href="">Habilitar Nueva Versión</a></li>
+            </ul>
+          </li>
+          <li class="li"><a class="a" href="#">Modo Prueba</a></li>
+          <li class="li"><a class="a" href="#">Administración &#9662</a>
+            <ul class="submn">
+              <li><a href="generarEjercicio.html">Generar Ejercicio</a></li>
+              <li><a href="agregarFormulario.html">Agregar Formulario</a></li>
+              <li><a href="eliminarFormulario.html">Eliminar Formulario</a></li>
+              <li><a href="">Tipo de Dato</a></li>
+              <li><a href="">Lista</a></li>
+              <li><a href="">Agregar Formulario al Ejercicio</a></li>
+              <li><a href="">Admon. de Tipo de Documento</a></li>
+            </ul>
+          </li>
+          <li class="li"><a class="a" href="#">Firmado</a>
+          </li>
+        </ul>
       </nav>
-     </div>-->
 
-     <nav>
-       <ul class="navbar">
-        <li><a href="#">Formulario &#9662</a>
-          <ul class="submenu">
-          <li><a href="">Nuevo</a></li>
-          <li><a href="index.html">Abrir</a></li>
-          <li><a href="">Guardar</a></li>
-          <li><a href="">Guardar y Liberar</a></li>
-          <li><a href="">Consultar</a></li>
-          <li><a href="">Cerrar</a></li>
-        </ul>
-        </li> 
-        <li><a href="#">Autorizaciones &#9662</a>
-        <ul class="submenu">
-          <li><a href="agregarFormulario.html">Iniciar Proceso de Publicación</a></li>
-          <li><a href="">Aceptar Mapa</a></li>
-          <li><a href="">Autorizar</a></li>
-          <li><a href="">Recibir</a></li>
-          <li><a href="">Publicar</a></li>
-          <li><a href="">Ajustar</a></li>
-          <li><a href="">Habilitar Nueva Versión</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Modo Prueba</a>
-      <li><a href="#">Administración &#9662</a>
-        <ul class="submenu">
-          <li><a href="generarEjercicio.html">Generar Ejercicio</a></li>
-          <li><a href="agregarFormulario.html">Agregar Formulario</a></li>
-          <li><a href="eliminarFormulario.html">Eliminar Formulario</a></li>
-          <li><a href="">Tipo de Dato</a></li>
-          <li><a href="">Lista</a></li>
-          <li><a href="">Agregar Formulario al Ejercicio</a></li>
-          <li><a href="">Admon. de Tipo de Documento</a></li>
-        </ul>
-      </li>
-      </ul>
-    </nav>
+    <!--FINNAVBAR-->
 
     <div class="inicio">     
       <div class="box">
@@ -157,18 +155,23 @@
       </div>
 
      
-    <div class="sheet-container">
-      <div class="sheet-content active" id="sheet1">Hoja 1</div>
-      <div class="sheet-content" id="sheet2"> Hoja 2</div>
-      <div class="sheet-content" id="sheet3"> Hoja 3</div>
-     </div>
-
-    <div class="sheet-tabs">
-      <button class="tab-button active" data-target="sheet1">Hoja 1</button>
-      <button class="tab-button" data-target="sheet2">Hoja 2</button>
-      <button class="tab-button" data-target="sheet3">Hoja 3</button>
-    </div>
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Anterior">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+        <a class="page-link" href="#" aria-label="Siguiente">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
             
+   
 
       <!--Footer-->
       <footer class="footer">
