@@ -2,7 +2,7 @@
 node_modules/
 
 # Build outputs
-dist1/
+dist/
 out/
 
 # Electron packaged apps
@@ -19,3 +19,4 @@ out/
 .DS_Store
 *.tmp
 .env
+.data
